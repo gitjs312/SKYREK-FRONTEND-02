@@ -4,7 +4,7 @@ export default function ProductCard(props) {
             <h2>{props.name}</h2>
             <img src={props.image} className="border-4"/>
             <p>price: {props.price} </p>
-            <button>Buy now</button>
+            <button>Buy now...</button>
         </div>
     )
 }
