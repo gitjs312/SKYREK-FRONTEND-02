@@ -1,15 +1,19 @@
-import OnSaleNow from "./componenets/onSaleNow"
-import ProductCard from "./componenets/productCard"
-
+import { Route, Routes } from "react-router-dom"
+import AdminPage from "./pages/admin"
+import HomePage from "./pages/home"
+import LoginPage from "./pages/login"
 
 function App() {
  
   return (
-    <div className="bg-amber-200">
-      <h1>Hello janith</h1>
-      <OnSaleNow/>
-      <OnSaleNow/>
-     
+    <div className="w-full h-screen bg-amber-300">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login/*" element={<LoginPage />} />
+        <Route path="/admin/*" element={<AdminPage />} />
+      </Routes>
+      
+
     </div>
   )
 }
