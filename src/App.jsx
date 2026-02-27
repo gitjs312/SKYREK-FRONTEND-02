@@ -7,7 +7,7 @@ import TestPage from "./pages/test"
 function App() {
  
   return (
-    <div className="w-full h-screen bg-primary text-secondary">
+    <div className="w-full h-screen">
 
      
       <Routes>
